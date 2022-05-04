@@ -8,8 +8,8 @@ repositories {
     mavenCentral()
 }
 
-group = 'dev.folomeev.kotgl.matrix'
-version = "0.0.1"
+group = 'dev.folomeev.kotgl'
+version = "0.0.1-beta"
 
 kotlin {
     jvm {
