@@ -1,3 +1,5 @@
+@file:kotlin.jvm.JvmName("Vec2")
+
 package dev.folomeev.kotgl.matrix.vectors
 
 /** A 2-dimensional vector.

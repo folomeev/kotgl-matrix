@@ -1,6 +1,8 @@
+@file:kotlin.jvm.JvmName("ImmutableVec4")
+
 package dev.folomeev.kotgl.matrix.vectors
 
-/** Immutable thread-safe 3-dimensional vector. */
+/** Immutable thread-safe 4-dimensional vector. */
 open class ImmutableVec4 internal constructor(
     override val x: Float,
     override val y: Float,

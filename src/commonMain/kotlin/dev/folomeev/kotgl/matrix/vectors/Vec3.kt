@@ -1,3 +1,5 @@
+@file:kotlin.jvm.JvmName("Vec3")
+
 package dev.folomeev.kotgl.matrix.vectors
 
 

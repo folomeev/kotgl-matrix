@@ -1,5 +1,5 @@
 /** Set of matrix map-reducing methods. */
-@file:kotlin.jvm.JvmName("MutableMatrices")
+@file:kotlin.jvm.JvmName("Matrices")
 @file:kotlin.jvm.JvmMultifileClass
 
 package dev.folomeev.kotgl.matrix.matrices

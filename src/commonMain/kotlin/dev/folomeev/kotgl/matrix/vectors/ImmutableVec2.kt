@@ -1,3 +1,5 @@
+@file:kotlin.jvm.JvmName("ImmutableVec2")
+
 package dev.folomeev.kotgl.matrix.vectors
 
 /** Immutable thread-safe 2-dimensional vector. */

@@ -1,3 +1,5 @@
+@file:kotlin.jvm.JvmName("VecZero")
+
 package dev.folomeev.kotgl.matrix.vectors
 
 /** A singleton of zero vector, all components of the vector are zeros. */

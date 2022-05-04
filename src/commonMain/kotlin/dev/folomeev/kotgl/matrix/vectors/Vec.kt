@@ -1,3 +1,5 @@
+@file:kotlin.jvm.JvmName("Vec")
+
 package dev.folomeev.kotgl.matrix.vectors
 
 /** A basic interface for a 4 component structure representing a vector in a 4-dimensional space.  */

@@ -1,3 +1,5 @@
+@file:kotlin.jvm.JvmName("Vec4")
+
 package dev.folomeev.kotgl.matrix.vectors
 
 import dev.folomeev.kotgl.matrix.epsEquals

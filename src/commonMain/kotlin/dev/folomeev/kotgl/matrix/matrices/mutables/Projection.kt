@@ -1,3 +1,7 @@
+/** Set of matrix projecting methods. */
+@file:kotlin.jvm.JvmName("MutableMatrices")
+@file:kotlin.jvm.JvmMultifileClass
+
 package dev.folomeev.kotgl.matrix.matrices.mutables
 
 import dev.folomeev.kotgl.matrix.FloatMapping16

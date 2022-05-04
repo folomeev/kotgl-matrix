@@ -1,3 +1,5 @@
+@file:kotlin.jvm.JvmName("VecUnitW")
+
 package dev.folomeev.kotgl.matrix.vectors
 
 /** Singleton unit vector having w-component equals to 1 and all other are zeros. */

@@ -1,3 +1,5 @@
+@file:kotlin.jvm.JvmName("VecUnitZ")
+
 package dev.folomeev.kotgl.matrix.vectors
 
 /** Singleton unit vector having z-component equals to 1 and all other are zeros. */
