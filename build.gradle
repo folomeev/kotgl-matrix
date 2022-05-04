@@ -1,5 +1,7 @@
 plugins {
     id 'org.jetbrains.kotlin.multiplatform' version '1.6.20'
+    id 'maven-publish'
+    id 'signing'
 }
 
 repositories {
@@ -56,4 +58,44 @@ kotlin {
             }
         }
     }
+}
+
+task javadocJar(type: Jar) {
+    archiveClassifier = "javadoc"
+}
+
+publishing {
+    repositories {
+        maven {
+            name = "sonatype"
+            url = "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
+            credentials {
+                username = project.properties["ossrhUsername"].toString()
+                password = project.properties["ossrhPassword"].toString()
+            }
+        }
+    }
+
+    publications {
+        maven(MavenPublication) {
+            artifact javadocJar
+
+            pom {
+                licenses {
+                    license {
+                        name.set("MIT")
+                        url.set("https://opensource.org/licenses/MIT")
+                    }
+                }
+                scm {
+                    url.set("https://github.com/folomeev/kotgl-matrix")
+                }
+
+            }
+        }
+    }
+}
+
+signing {
+    sign publishing.publications
 }
