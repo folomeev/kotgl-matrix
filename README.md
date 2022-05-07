@@ -9,5 +9,29 @@ with GL libraries.
 - Provides mutable and immutable structures.
 - Build with performance in-mind.
 
+## How to Use
+
+Use Maven Central repository:
+
+```groovy
+repositories {
+    mavenCentral()
+}
+```
+
+And then include `dev.folomeev.kotgl:kotgl-matrix` library as dependency for common sources:
+
+```groovy
+kotlin {
+    sourceSets {
+        commonMain {
+            dependencies {
+                implementation "dev.folomeev.kotgl:kotgl-matrix:0.0.1-beta"
+            }
+        }
+    }
+}
+```
+
 ## See Also
 - [How to Use Vectors](docs/vectors.md)
